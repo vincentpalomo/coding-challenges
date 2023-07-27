@@ -9,7 +9,7 @@ def mergeSort(numbers):
     # get lenght of input array
     inputLenght = len(numbers)
 
-    # smallest array will be less than 2
+    # if array is less than 2 elements, it is already sorted
     if inputLenght < 2:
         return numbers
 
@@ -32,11 +32,11 @@ def mergeSort(numbers):
 
     print('left and right filled with values', left, right)
 
-    # sort left and right arrays by calling mergeSort function (recursion)
+    # recursively call mergeSort function to sort the left and right sub-arrays
     left = mergeSort(left)
     right = mergeSort(right)
 
-    # call merge function
+    # merge the sorted left and right sub-arrays back into the original 'numbers' array
     merge(numbers, left, right)
 
     return numbers
