@@ -17,6 +17,8 @@ def sortedSquaredArrayBrute(array):
 ret = sortedSquaredArrayBrute([-2, 1, 3, 9, 6])
 print(ret)
 
+# 0(n) time | O(n) space
+
 
 def sortedSquaredArray(array):
     # create an empty array with lenght of input array with 0
