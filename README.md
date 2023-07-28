@@ -1,6 +1,6 @@
 # coding-challenges
 
-## Repo for learning coding interview data structure challenges
+## Repo for learning coding interview data structure questions
 
 ```
 Javascript
