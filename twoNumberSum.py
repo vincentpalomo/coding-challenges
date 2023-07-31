@@ -15,3 +15,13 @@ def twoNumberSum(array, target):
       right -= 1
 
 twoNumberSum([1, 3, -4, -5, 10], 13)
+
+def twoNumberSumHash(array, target):
+  nums = {}
+  for num in array:
+    if target - num in nums:
+      return [target - num, num]
+    else:
+      nums[num] = True
+
+twoNumberSumHash([1, 3, -4, -5, 10], 13)
